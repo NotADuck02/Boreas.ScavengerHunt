@@ -1,0 +1,24 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>Hey there curious Hearthian! I've come to visit, but I don't want to meet with just anyone.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>To remedy this, I've set out a series of clues, a little scavenger hunt if you will, to start, here is your first clue:</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>"Beneath cracking crust, An arrival's depiction, Sets all in motion"</Text>
+  </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+        <FactID>HINT_ONE_FOUND</FactID>
+    </RevealFact>
+    <RevealFact>
+        <FactID>HINT_TWO_RUMOR</FactID>
+    </RevealFact>
+  </ShipLogConditions>
+</NomaiObject>

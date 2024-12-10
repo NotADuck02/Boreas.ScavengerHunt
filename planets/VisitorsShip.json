@@ -1,0 +1,104 @@
+{
+    "name": "VISITORS_SHIP",
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "ShipLog": {
+      "xmlFile": "planets/shiplog/VisitorsShip.xml",
+      "spriteFolder": "assets/shiplog_images"
+    },
+    "canShowOnTitle": false,
+    "Atmosphere": {
+        "hasOxygen": true,
+        "size": 100,
+        "allowShipAutoroll": false
+    },
+    "Base": {
+        "groundSize": 0,
+        "surfaceSize": 0,
+        "pushable": false,
+        "hideProxy": true
+    },
+    "Cloak": {
+        "radius": 2000
+    },
+    "Orbit": {
+        "primaryBody": "SUN",
+        "isStatic": true,
+        "semiMajorAxis": 10000,
+        "inclination": 90,
+        "eccentricity": 0,
+        "trueAnomaly": 90
+    },
+    "ReferenceFrame": {
+        "enabled": false
+    },
+    "Volumes": {
+        "zeroGravityVolumes": [
+            {
+                "radius": 300,
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "isRelativeToParent": true
+            }
+        ],
+        "revealVolumes": [
+            {
+                "radius": 300,
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "isRelativeToParent": true,
+                "revealOn": "enter",
+                "revealFor": "player",
+                "reveals": ["THE_SHIP"]
+            }
+        ]
+    },
+    "Props": {
+        "details": [
+            {
+                "rename": "NomaiVisitor",
+                "position": {
+                    "x": 0,
+                    "y": 21.3,
+                    "z": -2.7
+                },
+                "rotation": {
+                    "x": 84,
+                    "y": 354,
+                    "z": 354
+                },
+                "isRelativeToParent": true,
+                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle"
+            }
+        ],
+        "shuttles": [
+            {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "isRelativeToParent": true,
+                "id": "VISITORS_SHUTTLE"
+            }
+        ],
+        "dialogue": [
+            {
+                "position": {
+                    "x": -0.15,
+                    "y": 2,
+                    "z": 1.25
+                },
+                "isRelativeToParent": true,
+                "pathToAnimController": "Sector/NomaiVisitor",
+                "xmlFile": "planets/text/Nomai.xml",
+                "range": 4
+            }
+        ]
+    }
+}

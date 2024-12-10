@@ -1,0 +1,42 @@
+{
+    "name": "BRITTLE_HOLLOW",
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "ShipLog": {
+      "xmlFile": "planets/shiplog/BrittleHollow.xml",
+      "spriteFolder": "assets/shiplog_images"
+    },
+    "Props": {
+      "details": [
+        {
+          "rename": "hint_2_recorder",
+          "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Prefab_NOM_Recorder/Props_NOM_Recorder",
+          "keepLoaded": true,
+          "alignRadial": true,
+          "position": {
+            "x": 34.70461,
+            "y": 6.171623,
+            "z": -237.2988
+          }
+        }
+        ],
+        "translatorText": [
+            {
+                "type": "preCrashRecorder",
+                "rename": "hint_2",
+                "parentPath": "Sector_BH/hint_2_recorder",
+                "position": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "rotation": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "xmlFile": "planets/text/Clue2.xml",
+                "isRelativeToParent": true
+            }
+        ]
+    }
+}

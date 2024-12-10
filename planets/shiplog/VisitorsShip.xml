@@ -1,0 +1,22 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>VISITORS_SHIP</ID>
+  
+  <!--The entry for the White Hole Station hint-->
+  <Entry>
+    <ID>VISITORS_SHIP</ID>
+    <Name>The Visitor</Name>
+    <Curiosity>THE_VISITOR</Curiosity>
+
+    <RumorFact>
+      <ID>VISITOR_RUMOR</ID>
+      <SourceID>WHITE_HOLE_STATION_HINT</SourceID>
+      <RumorName>Mysterious Ship</RumorName>
+      <Text>"I've enjoyed watching your search from above, hidden in plain sight, find me with the help of your satellite and unstable star, don't be a stranger!"</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>THE_SHIP</ID>
+      <Text>I found a Nomai Ship cloaked near our sun. There was a shy Nomai aboard!</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

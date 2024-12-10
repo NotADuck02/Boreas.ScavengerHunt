@@ -1,0 +1,22 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>BRITTLE_HOLLOW</ID>
+  
+  <!--The entry for the Bramble Murals hint-->
+  <Entry>
+    <ID>BRAMBLE_MURAL_HINT</ID>
+    <Name>Bramble Mural Hint</Name>
+    <Curiosity>THE_VISITOR</Curiosity>
+
+    <RumorFact>
+      <ID>HINT_TWO_RUMOR</ID>
+      <SourceID>STARTING_HINT</SourceID>
+      <RumorName>Hint Two</RumorName>
+      <Text>"Beneath cracking crust, An arrival's depiction, Sets all in motion"</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>HINT_TWO_FOUND</ID>
+      <Text>I found a Nomai recording by the bramble murals on Brittle Hollow. It gave me the next clue, "With the rock that moves, by water and trees, in the quiet grove, enjoy a gentle breeze"</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

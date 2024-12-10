@@ -1,0 +1,22 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>WHITE_HOLE_TARGET</ID>
+  
+  <!--The entry for the White Hole Station hint-->
+  <Entry>
+    <ID>WHITE_HOLE_STATION_HINT</ID>
+    <Name>White Hole Station Hint</Name>
+    <Curiosity>THE_VISITOR</Curiosity>
+
+    <RumorFact>
+      <ID>HINT_FOUR_RUMOR</ID>
+      <SourceID>QUANTAM_GROVE_HINT</SourceID>
+      <RumorName>Hint Four</RumorName>
+      <Text>"With a view of the wilds, the final clue does hide, sheltered from the hungry void, safe on the other side"</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>HINT_FOUR_FOUND</ID>
+      <Text>I found a Nomai recording on the White Hole Station. It gave me a final clue to find the Visitor, "I've enjoyed watching your search from above, hidden in plain sight, find me with the help of your satellite and unstable star, don't be a stranger!"</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

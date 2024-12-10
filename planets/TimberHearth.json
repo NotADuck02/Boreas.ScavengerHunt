@@ -1,0 +1,83 @@
+{
+    "name": "TIMBER_HEARTH",
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "ShipLog": {
+      "xmlFile": "planets/shiplog/TimberHearth.xml",
+      "spriteFolder": "assets/shiplog_images"
+    },
+    "Props": {
+      "details": [
+        {
+          "rename": "hint_1_recorder",
+          "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Prefab_NOM_Recorder/Props_NOM_Recorder",
+          "keepLoaded": true,
+          "alignRadial": true,
+          "position": {
+            "x": 15.94197,
+            "y": -40.65475,
+            "z": 186.3057
+          },
+          "rotation": {
+            "x": 0,
+            "y": 180,
+            "z": 0
+          }
+        },
+        {
+          "rename": "hint_3_recorder",
+          "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Prefab_NOM_Recorder/Props_NOM_Recorder",
+          "keepLoaded": true,
+          "parentPath": "Sector_TH/Sector_QuantumGrove/Interactables_QuantumGrove/QuantumSaplings/Quantum_PoemTree",
+          "alignRadial": true,
+          "isRelativeToParent": true,
+          "position": {
+            "x": 1.4454,
+            "y": 0,
+            "z": 0.3918
+          },
+          "rotation": {
+            "x": 0,
+            "y": 270,
+            "z": 0
+          }
+        }
+      ],
+      "translatorText": [
+        {
+            "type": "preCrashRecorder",
+            "rename": "hint_1",
+            "parentPath": "Sector_TH/hint_1_recorder",
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "xmlFile": "planets/text/Clue1.xml",
+            "isRelativeToParent": true
+        },
+        {
+            "type": "preCrashRecorder",
+            "rename": "hint_3",
+            "parentPath": "Sector_TH/Sector_QuantumGrove/Interactables_QuantumGrove/QuantumSaplings/Quantum_PoemTree/hint_3_recorder",
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "xmlFile": "planets/text/Clue3.xml",
+            "isRelativeToParent": true
+        }
+      ]
+    }
+  }
+  

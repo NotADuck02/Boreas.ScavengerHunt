@@ -1,0 +1,19 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>Okay, here's your final hint, this one will lead you to me:</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>"I've enjoyed watching your search from above, hidden in plain sight, find me with the help of your satellite and unstable star, don't be a stranger!"</Text>
+  </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+        <FactID>HINT_FOUR_FOUND</FactID>
+    </RevealFact>
+    <RevealFact>
+        <FactID>VISITOR_RUMOR</FactID>
+    </RevealFact>
+  </ShipLogConditions>
+</NomaiObject>

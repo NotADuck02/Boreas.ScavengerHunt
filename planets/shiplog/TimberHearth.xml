@@ -1,0 +1,34 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>TIMBER_HEARTH</ID>
+  
+  <!--The entry for the Starting hint-->
+  <Entry>
+    <ID>STARTING_HINT</ID>
+    <Name>Starting Hint</Name>
+    <Curiosity>THE_VISITOR</Curiosity>
+
+    <ExploreFact>
+      <ID>HINT_ONE_FOUND</ID>
+      <Text>There was a new Nomai Recording by Slate. It is apparently the start of a scavenger hunt! The first clue is "Beneath cracking crust, An arrival's depiction, Sets all in motion"</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!--The entry for the Quantam Grove hint-->
+  <Entry>
+    <ID>QUANTAM_GROVE_HINT</ID>
+    <Name>Quantam Grove Hint</Name>
+    <Curiosity>THE_VISITOR</Curiosity>
+
+    <RumorFact>
+      <ID>HINT_THREE_RUMOR</ID>
+      <SourceID>BRAMBLE_MURAL_HINT</SourceID>
+      <RumorName>Hint Three</RumorName>
+      <Text>"With the rock that moves, by water and trees, in the quiet grove, enjoy a gentle breeze"</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>HINT_THREE_FOUND</ID>
+      <Text>I found a Nomai recording in the Quantam Grove on Timber Hearth. It gave me another hint. "With a view of the wilds, the final clue does hide, sheltered from the hungry void, safe on the other side"</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

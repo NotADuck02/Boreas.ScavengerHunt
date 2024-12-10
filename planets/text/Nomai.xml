@@ -1,0 +1,203 @@
+<!-- All files must have `DialogueTree` as the root element, the xmlns:xsi=... and xsi:noNamespaceSchemaLocation=... is optional but provides improved error checking if your editor supports it -->
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+ <NameField>The Visitor</NameField> <!-- The name of this character -->
+
+ <DialogueNode> <!-- A dialogue node is a set of pages displayed to the player optionally followed by options -->
+  <Name>Start</Name> <!-- The name of this node, used to go to this node from another node -->
+  <EntryCondition>DEFAULT</EntryCondition> <!-- The condition that must be met for this node to be reached; A file should always have a node with "DEFAULT" -->
+  <Dialogue> <!-- The actual dialogue we want to show the player -->
+   <Page>Greetings Hearthian!</Page> <!-- A single page of the dialogue -->
+        <Page>I hope you didn't have too much trouble finding my ship.</Page> <!-- Another page -->
+  </Dialogue>
+  <SetCondition>TalkedToThisLoop</SetCondition>
+  <DialogueOptionsList> <!-- Show options the player can choose from when the character is done talking -->
+   <DialogueOption> <!-- A single option the player can pick -->
+    <Text>It was quite the ordeal</Text> <!-- The text to display for the option -->
+    <DialogueTarget>Ordeal</DialogueTarget> <!-- The name of the node to jump to -->
+   </DialogueOption>
+   <!-- A few more options... -->
+   <DialogueOption>
+    <Text>It was no big deal</Text>
+    <DialogueTarget>NoBiggie</DialogueTarget>
+   </DialogueOption>
+   <DialogueOption>
+    <Text>Why didn't you just come say hi yourself?</Text>
+    <DialogueTarget>Reasoning</DialogueTarget>
+   </DialogueOption>
+   <DialogueOption>
+    <Text>Wait... you can speak my language?</Text>
+    <DialogueTarget>Language</DialogueTarget>
+   </DialogueOption>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode>
+  <Name>SecondaryStart</Name>
+  <EntryCondition>TalkedToThisLoop</EntryCondition>
+  <Dialogue>
+   <Page>Is there anything else you wanted to talk about?</Page>
+  </Dialogue>
+  <DialogueOptionsList>
+        <ReuseDialogueOptionsListFrom>Ordeal</ReuseDialogueOptionsListFrom>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode> <!-- Another node -->
+  <Name>Ordeal</Name> <!-- Name of the node -->
+  <!-- (Note the lack of an EntryCondition) -->
+  <Dialogue>
+   <Page>Oh my, well I do apologize, I'm glad you got here in the end!</Page>
+        <Page> I'm not great with small talk, is there anything you wanted to talk about?</Page>
+  </Dialogue>
+
+  <DialogueOptionsList>
+   <DialogueOption>
+    <Text>Do you know about the Nomai that came here?</Text>
+    <DialogueTarget>Nomai</DialogueTarget>
+   </DialogueOption>
+   <DialogueOption>
+    <Text>Do the other Nomai know about the eye of the universe?</Text>
+    <DialogueTarget>Eye</DialogueTarget>
+   </DialogueOption>
+   <DialogueOption>
+    <Text>You know this star is going to explode soon right?</Text>
+    <DialogueTarget>Supernova</DialogueTarget>
+   </DialogueOption>
+   <DialogueOption>
+    <Text>Nope Nothing.</Text>
+    <DialogueTarget>End</DialogueTarget>
+   </DialogueOption>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode>
+  <Name>NoBiggie</Name>
+  <Dialogue>
+   <Page>That's great! You must be smarter than I originally hypothesized.</Page>
+        <Page> I'm not great with small talk, is there anything you wanted to talk about?</Page>
+  </Dialogue>
+  <DialogueOptionsList>
+        <ReuseDialogueOptionsListFrom>Ordeal</ReuseDialogueOptionsListFrom>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode>
+  <Name>Reasoning</Name>
+  <Dialogue>
+   <Page>Well truthfully I'm rather shy, so I figured I could get to know you first by watching you solve this scavenger hunt!</Page>
+        <Page> I'm not great with small talk, is there anything you wanted to talk about?</Page>
+  </Dialogue>
+  <DialogueOptionsList>
+        <ReuseDialogueOptionsListFrom>Ordeal</ReuseDialogueOptionsListFrom>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode>
+  <Name>Language</Name>
+  <Dialogue>
+   <Page>Of course, the universal translator equipped in my suit was something shared by Camellia's clan around 100 thousand years ago.</Page>
+        <Page> Though if you ask me it's due for some improvements.</Page>
+        <Page> I'm not great with small talk, is there anything you wanted to talk about?</Page>
+  </Dialogue>
+  <DialogueOptionsList>
+        <ReuseDialogueOptionsListFrom>Ordeal</ReuseDialogueOptionsListFrom>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode> <!-- Another node why not -->
+  <Name>Nomai</Name>
+  <Dialogue>
+   <Page>Oh I was unaware there were other Nomai here!</Page>
+        <Page>I'd love to meet them</Page>
+  </Dialogue>
+
+  <DialogueOptionsList>
+   <DialogueOption>
+    <Text>Um... about that</Text>
+    <DialogueTarget>Oof</DialogueTarget>
+   </DialogueOption>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode> <!-- Another node why not -->
+  <Name>Eye</Name>
+  <Dialogue>
+   <Page>The what? I'm sorry, I don't know what you are talking about.</Page>
+  </Dialogue>
+
+  <DialogueOptionsList>
+   <DialogueOption>
+    <Text>Oh yeah, it's this signal that's older than the universe, no one has ever been to it!</Text>
+    <DialogueTarget>Eye2</DialogueTarget>
+   </DialogueOption>
+   <DialogueOption>
+    <Text>Oh yeah it's this weird signal that the nomai that arrived here found, but eventually lost sight of.</Text>
+    <DialogueTarget>OofPrequel</DialogueTarget>
+   </DialogueOption>
+   <DialogueOption>
+    <Text>Oh uh, forget I mentioned it</Text>
+    <DialogueTarget>AnythingElse</DialogueTarget>
+   </DialogueOption>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode>
+  <Name>Eye2</Name>
+  <Dialogue>
+   <Page>Oh wow that's so cool! You have to come with me to tell the other nomai about this!</Page>
+  </Dialogue>
+ </DialogueNode> 
+
+ <DialogueNode>
+  <Name>OofPrequel</Name>
+  <Dialogue>
+   <Page>Oh I was unaware there were other Nomai here!</Page>
+        <Page>I'd love to meet them</Page>
+  </Dialogue>
+
+  <DialogueOptionsList>
+   <DialogueOption>
+    <Text>Um... about that</Text>
+    <DialogueTarget>Oof</DialogueTarget>
+   </DialogueOption>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode>
+  <Name>Oof</Name>
+  <Dialogue>
+   <Page>Oh... oh... wait you said it was Escall's vessel? I thought they were lost forever!</Page>
+        <Page>I simply have to go tell the other clans about this! I must be going</Page>
+  </Dialogue>
+ </DialogueNode>
+
+ <DialogueNode>
+  <Name>AnythingElse</Name>
+  <Dialogue>
+   <Page>Is there anything else you wanted to talk about?</Page>
+  </Dialogue>
+  <DialogueOptionsList>
+        <ReuseDialogueOptionsListFrom>Ordeal</ReuseDialogueOptionsListFrom>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+ <DialogueNode> <!-- The end node -->
+  <Name>Supernova</Name>
+  <Dialogue>
+   <Page>Well I know it'll explode soon, but we're unsure how long it will take before the supernova.</Page>
+   <Page>Is there anything else you wanted to talk about?</Page>
+  </Dialogue>
+  <DialogueOptionsList>
+        <ReuseDialogueOptionsListFrom>Ordeal</ReuseDialogueOptionsListFrom>
+  </DialogueOptionsList>
+  <!-- When a node doesn't have any options defined the dialogue box will close once the pages have been read -->
+ </DialogueNode>
+
+ <DialogueNode>
+  <Name>End</Name>
+  <Dialogue>
+   <Page>Well it was nice to talk with you, I hope to see you again someday!</Page>
+  </Dialogue>
+ </DialogueNode>
+</DialogueTree>

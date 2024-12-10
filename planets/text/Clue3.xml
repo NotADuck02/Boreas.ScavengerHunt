@@ -1,0 +1,19 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>You're doing great! This next hint might be a bit tricky though:</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>"With a view of the wilds, the final clue does hide, sheltered from the hungry void, safe on the other side"</Text>
+  </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+        <FactID>HINT_THREE_FOUND</FactID>
+    </RevealFact>
+    <RevealFact>
+        <FactID>HINT_FOUR_RUMOR</FactID>
+    </RevealFact>
+  </ShipLogConditions>
+</NomaiObject>
