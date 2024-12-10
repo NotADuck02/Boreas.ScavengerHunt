@@ -1,4 +1,4 @@
-# ![Boreas.ScavengerHunt](assets/banner_image.png)
+# ![Boreas.ScavengerHunt](assets/banner_image.PNG)
 
 # Scavenger Hunt
 
