@@ -7,8 +7,8 @@
     },
     "canShowOnTitle": false,
     "Atmosphere": {
-        "hasOxygen": true,
-        "size": 100,
+        "hasOxygen": false,
+        "size": 0,
         "allowShipAutoroll": false
     },
     "Base": {
