@@ -9,3 +9,4 @@ This mod is very rough around the edges, but just wanted to get it out there, le
 
 # Requirements
 This mod is an addon for New Horizons, so it requires that mod in order to function
+This mod uses a feature from the DLC, so it is required for the mod to function
