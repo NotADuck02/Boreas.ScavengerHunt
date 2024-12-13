@@ -2,9 +2,9 @@
 	"$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/manifest_schema.json",
 	"filename": "NewHorizonsConfig.dll",
 	"author": "Boreas",
-	"name": "Scavenger Hunt",
+	"name": "Nomai Scavenger Hunt",
 	"uniqueName": "Boreas.ScavengerHunt",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"owmlVersion": "2.13.0",
 	"dependencies": [ "xen.NewHorizons" ]
 }
