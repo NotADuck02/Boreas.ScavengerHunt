@@ -18,7 +18,7 @@
         "hideProxy": true
     },
     "Cloak": {
-        "radius": 2000
+        "radius": 3000
     },
     "Orbit": {
         "primaryBody": "SUN",
@@ -55,6 +55,19 @@
                 "revealOn": "enter",
                 "revealFor": "player",
                 "reveals": ["THE_SHIP"]
+            }
+        ],
+        "speedLimiterVolumes": [
+            {
+                "radius": 300,
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "isRelativeToParent": true,
+                "maxSpeed": 30,
+                "maxEntryAngle": 360
             }
         ]
     },

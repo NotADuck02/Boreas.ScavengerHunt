@@ -4,7 +4,7 @@
 	"author": "Boreas",
 	"name": "Nomai Scavenger Hunt",
 	"uniqueName": "Boreas.ScavengerHunt",
-	"version": "0.1.1",
+	"version": "1.0.0",
 	"owmlVersion": "2.13.0",
 	"dependencies": [ "xen.NewHorizons" ]
 }
